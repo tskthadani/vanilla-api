@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - newSite
+      - videos
   pull_request:
     types: [opened, synchronize, reopened, closed]
     branches:
