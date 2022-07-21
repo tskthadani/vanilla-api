@@ -4,10 +4,12 @@ on:
   push:
     branches:
       - images
+      - videos
   pull_request:
     types: [opened, synchronize, reopened, closed]
     branches:
       - images
+      - videos
 
 jobs:
   build_and_deploy_job:
