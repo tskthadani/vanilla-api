@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - images
+      - videoes
   pull_request:
     types: [opened, synchronize, reopened, closed]
     branches:
