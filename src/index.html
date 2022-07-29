@@ -38,32 +38,32 @@
     (async function () {
         var jpgcontainer = document.getElementById('jpg');
         var pngcontainer = document.getElementById('png');
-        var files = {
+     /*   var files = {
             'jpg': 50000
-        };
-        /*
+        }; */
+        
         var files2 = {
-            'png': 200
+            'png': 250000
         };
-        */
+        
 
-        for (var jpgext in files) {
+     /*   for (var jpgext in files) {
             for (var i = 0; i < files[jpgext]; i++) {
                 var jpgsrc = "images/thing/img/" + (i + 1) + "." + jpgext;
                 var jpgimg = new Image();
                 jpgimg.src = jpgsrc;
                 jpgcontainer.appendChild(jpgimg);
             }
-        }
-        /*
+        } */
+        
         for (var pngext in files2) {
             for (var j = 0; j < files2[pngext]; j++) {
-                var pngsrc = "images/png/" + (j + 1) + "." + pngext;
+                var pngsrc = "images/thing/img/" + (j + 1) + "." + pngext;
                 var pngimg = new Image();
                 pngimg.src = pngsrc;
                 pngcontainer.appendChild(pngimg);
             }
-        }*/
+        }
     })();
   </script>
 </html>
